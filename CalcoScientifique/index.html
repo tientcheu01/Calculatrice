@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Scientifique</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="calculatrice">
+        <div id="heure"></div>
+        <input type="text" id="affichage" disabled />
+        <div class="boutons">
+            <button onclick="effacer()">C</button>
+            <button onclick="ajouter('1')">1</button>
+            <button onclick="ajouter('2')">2</button>
+            <button onclick="ajouter('3')">3</button>
+            <button onclick="ajouter('+')">+</button>
+            <button onclick="ajouter('4')">4</button>
+            <button onclick="ajouter('5')">5</button>
+            <button onclick="ajouter('6')">6</button>
+            <button onclick="ajouter('-')">-</button>
+            <button onclick="ajouter('7')">7</button>
+            <button onclick="ajouter('8')">8</button>
+            <button onclick="ajouter('9')">9</button>
+            <button onclick="ajouter('*')">*</button>
+            <button onclick="ajouter('0')">0</button>
+            <button onclick="ajouter('/')">/</button>
+            <button onclick="calculer()">=</button>
+        </div>
+        <div class="boutons-scientifiques" id="scientifique">
+            <button onclick="puissance()">xʸ</button>
+            <button onclick="factoriel()">n!</button>
+            <button onclick="racine()">√</button>
+            <button onclick="conversion()">Bin/Hex/Dec</button>
+            <button onclick="ajouter('Math.exp(')">exp</button>
+            <button onclick="ajouter('Math.log(')">log</button>
+            <button onclick="ajouter('Math.sin(')">sin</button>
+            <button onclick="ajouter('Math.cos(')">cos</button>
+            <button onclick="ajouter('Math.tan(')">tan</button>
+            <button onclick="ajouter('%')">mod</button> 
+            <button onclick="ajouter('(')">(</button>
+            <button onclick="ajouter(')')">)</button>
+        </div>
+        <button class="mode-btn" onclick="toggleMode()">Mode Scientifique</button>
+    </div>
+    <script src="ts-built/main.js"></script>
+</body>
+</html>
